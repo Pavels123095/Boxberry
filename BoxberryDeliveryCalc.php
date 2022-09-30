@@ -49,7 +49,7 @@
 
 	public function send($request, $method, $params = []) {
 		$url='http://api.boxberry.ru/json.php';
-		$token = 'f80a2770508faff64a128d1840801711';
+		$token = '';
 		if ($request == 'GET') {
 			$full_url = $url.'?token='.$token.'&method='.$method;
 			if (empty($params) === false) {
